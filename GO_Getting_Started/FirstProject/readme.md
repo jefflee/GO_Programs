@@ -13,3 +13,7 @@ or
 or 
 
     go build .
+
+
+## Open users page
+    http://localhost:3000/users

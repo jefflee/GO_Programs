@@ -17,6 +17,6 @@ func (uc userController) ServeHTTP(w http.ResponseWriter, r *http.Request) {
 // contructor. Golang doesn't have constructor, but we usually use a function to represent it. The function name start with new.
 func newUserController() *userController {
 	return &userController{
-		userIDPattern: regexp.MustCompile(`^/users/(\d+)/?`);
+		userIDPattern: regexp.MustCompile(`^/users/(\d+)/?`),
 	}
 }
