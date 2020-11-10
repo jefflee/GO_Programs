@@ -1,6 +1,6 @@
 package main
 
-import "hello"
+import "myservice/hello"
 
 func main() {
 	hello.SayHello()
