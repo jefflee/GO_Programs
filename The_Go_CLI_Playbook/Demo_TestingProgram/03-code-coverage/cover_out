@@ -1,0 +1,3 @@
+mode: count
+C:\Git\MyGitHub\GO_Programs\The_Go_CLI_Playbook\Demo_TestingProgram\03-code-coverage\src\mylib\mylib.go:3.26,5.2 1 1
+C:\Git\MyGitHub\GO_Programs\The_Go_CLI_Playbook\Demo_TestingProgram\03-code-coverage\src\mylib\mylib.go:7.30,9.2 1 0
