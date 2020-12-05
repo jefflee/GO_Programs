@@ -26,6 +26,8 @@ func main() {
 
 	showMessage(INFO, fmt.Sprintf("About to open %s", fileName))
 
+	showMessage(WARNING, "This is warning.")
+
 	file, err := os.Open("test.txt")
 	if err != nil {
 		showMessage(ERROR, err.Error())
@@ -41,15 +43,14 @@ func main() {
 func showMessage(messagetype messageType, message string) {
 
 	switch messagetype {
-	case INFO :
+	case INFO:
 		printMessage := fmt.Sprintf("\nInformation: \n%s\n", message)
 		fmt.Printf(InfoColor, printMessage)
-	case WARNING :
+	case WARNING:
 		printMessage := fmt.Sprintf("\nWarning: \n%s\n", message)
 		fmt.Printf(WarningColor, printMessage)
-	case ERROR :
+	case ERROR:
 		printMessage := fmt.Sprintf("\nError: \n%s\n", message)
 		fmt.Printf(ErrorColor, printMessage)
 	}
 }
-
