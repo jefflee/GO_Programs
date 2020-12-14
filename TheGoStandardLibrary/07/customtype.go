@@ -2,7 +2,8 @@ package main
 
 import (
 	"fmt"
-	"media"
+
+	"./media"
 )
 
 func main() {
