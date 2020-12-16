@@ -4,11 +4,9 @@ import (
 	"fmt"
 	"math/rand"
 	"time"
-
-	"concurrent/books"
 )
 
-var cache = map[int]books.Book{}
+var cache = map[int]Book{}
 var rnd = rand.New(rand.NewSource(time.Now().UnixNano()))
 
 func main() {
@@ -29,18 +27,18 @@ func main() {
 	}
 }
 
-func queryCache(id int) (books.Book, bool) {
+func queryCache(id int) (Book, bool) {
 	b, ok := cache[id]
 	return b, ok
 }
 
-func queryDatabase(id int) (books.Book, bool) {
+func queryDatabase(id int) (Book, bool) {
 	time.Sleep(300 * time.Millisecond)
-	for _, b := range books.Books {
+	for _, b := range books {
 		if b.ID == id {
 			return b, true
 		}
 	}
 
-	return books.Book{}, false
+	return Book{}, false
 }
