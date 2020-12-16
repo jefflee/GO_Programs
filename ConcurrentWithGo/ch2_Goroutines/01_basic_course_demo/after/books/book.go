@@ -1,4 +1,4 @@
-package main
+package books
 
 import "fmt"
 
@@ -16,7 +16,7 @@ func (b Book) String() string {
 			"Published:\t%v\n", b.Title, b.Author, b.YearPublished)
 }
 
-var books = []Book{
+var Books = []Book{
 	Book{
 		ID:            1,
 		Title:         "The Hitchhiker's Guide to the Galaxy",
