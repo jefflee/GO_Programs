@@ -30,7 +30,9 @@ func main() {
 			}
 			wg.Done()
 		}(id, wg)
-		time.Sleep(150 * time.Millisecond)
+
+		// I comment this line
+		// time.Sleep(500 * time.Millisecond)
 	}
 
 	wg.Wait()
